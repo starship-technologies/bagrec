@@ -3,7 +3,7 @@ bagrec: a fast ROS bag writer
 
 ### What is it?
 
-An alternative to `rosbag record` for recording (ROS)[http://www.ros.org/]
+An alternative to `rosbag record` for recording [ROS](http://www.ros.org/)
 bag files from given topics. This actually uses `librosbag` for serialisation,
 the primary difference is in the elision of the expensive queuing and
 dispatch implied by ROS's message subscription system.
@@ -32,7 +32,7 @@ as boost_program_options (already a ROS dependency).
 
 ```
 rosrun bagrec bagrec
-       -o bags \
+       -o bag_file_prefix \
        --split-interval 120 \
        --lz4 \
        --topic-substring camera_info image \
